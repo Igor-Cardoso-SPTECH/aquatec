@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+    background-color: black;
+}
+
+:root {
+    --tamanho-header: 80px;
+    --tamanho-footer: 90px;
+    --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+
+
+
+
+}
+
+.header {
+    height: var(--tamanho-header);
+    border-bottom: 2px solid #32b9cd;
+}
+
+.titulo {
+    color: #32b9cd;
+    width: fit-content;
+    font-weight: 500;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+
+}
+
+.header .container {
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #e3b062;
+    list-style: none;
+}
+
+.header a {
+    text-decoration: none;
+    color: #e3b062;
+}
+
+.agora {
+    font-weight: 800;
+}
+
+
+/*BANNER*/
+
+.banner {
+    height: var(--tamanho-banner);
+    color: white;
+    background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
+    background-size: cover;
+}
+
+.banner .container {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.banner .container p{
+width: 50%;
+margin: 0;
+padding: 0;
+font-size: 36px
+
+}
+
+.banner .container span{
+    font-weight: 800;
+}
+
+
+
+/*Missão visão e valores*/
+
+.social {
+
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.social .container .boxes{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 0;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box img{
+    width: 170px;
+}
+
+/**/
+
+.footer{
+background-color: #32b9cd;
+height: var(--tamanho-footer);
+color: #fff;
+display: flex;
+font-size: 15px;
+}
+
+.footer .container {
+ 
+    justify-content: center;
+    text-align: center;
+
+}
+
+.version{
+    font-size: 12px;
+
+}
+
+.login, .simulador {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.card {
+    background-color: #1b1b1b;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.campo span {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.campo input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+.botao {
+    background-color: #32b9cd;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+
+    border: none;
+}
